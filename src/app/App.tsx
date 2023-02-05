@@ -1,13 +1,13 @@
 import { Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { Route, Routes } from 'react-router-dom'
-import { Counter } from './components/Counter'
+
+import { AboutPage } from 'pages/AboutPage'
+import { MainPage } from 'pages/MainPage'
+import { useTheme } from './providers/ThemeProvider'
+import { classNames } from 'shared/lib/classNames/classNames'
 
 import './styles/index.sass'
-import { AboutPage } from './pages/AboutPage'
-import { MainPage } from './pages/MainPage'
-import { useTheme } from './theme/useTheme'
-import { classNames } from './helpers/classNames/classNames'
 
 export const App = () => {
     const { theme, toggleTheme } = useTheme()
