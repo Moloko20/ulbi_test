@@ -7,12 +7,13 @@ import './styles/index.sass'
 import { AboutPage } from './pages/AboutPage'
 import { MainPage } from './pages/MainPage'
 import { useTheme } from './theme/useTheme'
+import { classNames } from './helpers/classNames/classNames'
 
 export const App = () => {
     const { theme, toggleTheme } = useTheme()
 
     return (
-        <div className={`app ${theme}`}>
+        <div className={classNames('app', {}, [theme])}>
             <button onClick={toggleTheme}>Сменить тему</button>
 
             <Link to={'/'}>Main</Link>
