@@ -1,11 +1,10 @@
 import { useTheme } from './providers/ThemeProvider'
 import { classNames } from 'shared/lib/classNames/classNames'
 
-import './styles/index.sass'
+import './styles/index.scss'
 import { AppRouter } from './providers/router'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
-import { useTranslation } from 'react-i18next'
 import { Suspense } from 'react'
 
 export const App = () => {

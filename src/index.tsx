@@ -10,7 +10,6 @@ render(
         <ThemeProvider>
             <App />
         </ThemeProvider>
-    </BrowserRouter>,     
+    </BrowserRouter>,
     document.getElementById('root'),
 )
- 

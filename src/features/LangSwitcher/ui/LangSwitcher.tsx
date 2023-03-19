@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { classNames } from 'shared/lib/classNames/classNames'
 import LanguageIcon from 'shared/assets/icons/language.svg'
 
-import cls from './LangSwitcher.module.sass'
+import cls from './LangSwitcher.module.scss'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 
 interface LangSwitcherProps {
