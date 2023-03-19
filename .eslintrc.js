@@ -10,6 +10,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'prettier',
         'plugin:prettier/recommended',
+        'plugin:i18next/recommended',
     ],
     overrides: [],
     parser: '@typescript-eslint/parser',
@@ -18,7 +19,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
+    plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier', 'i18next'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/react-in-jsx-scope': 'off',
