@@ -4,7 +4,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Sidebar.module.scss'
 import { LangSwitcher } from 'features/LangSwitcher'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
-import { Button, ThemeButton } from 'shared/ui/Button/Button'
+import { Button, ThemeButton } from 'shared/ui/Button'
 
 interface SidebarProps {
     className?: string
