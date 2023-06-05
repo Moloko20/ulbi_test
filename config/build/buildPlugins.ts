@@ -18,6 +18,6 @@ export function buildPlugins({ paths, isDev }: BuildOptions): WebpackPluginInsta
         new DefinePlugin({
             __IS_DEV__: isDev,
         }),
-        ...[isDev && new ReactRefreshWebpackPlugin()].filter(Boolean),
+        ...[isDev && new ReactRefreshWebpackPlugin({ overlay: false })].filter(Boolean),
     ]
 }
